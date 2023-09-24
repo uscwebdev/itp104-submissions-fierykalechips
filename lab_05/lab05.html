@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title> 
+
+    <style>
+
+        #content {
+            width:900px;
+            background-color: lightgray;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .allquestions {
+            display: flex;
+            justify-content: left;
+            align-content: center;
+        }
+
+
+        h1 {
+            margin: auto;
+            text-align:center;
+        }
+
+        .question {
+            margin: 20px 20px 20px 20px;
+        }
+
+        .answer {
+            margin: 20px 20px 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>
+        Do you have Good Vibes?
+    </h1>
+    <div id="content">
+        
+        <form action="confirmation.html">
+            
+            <div class="allquestions">
+                <div class="question">
+                    <label for="name">
+                        Name:
+                    </label>
+                </div>
+                <div class="answer">    
+                    <input type="text" id="name" placeholder="Silly McSillerson"/>
+                </div>
+            </div>
+
+            <div class="allquestions">
+                <div class="question">
+                    <label>
+                        Which institution do you attend?
+                    </label>
+                </div>
+                <div class="answer">
+                    <label>
+                        <input type="radio" name="school" />
+                        USC
+                    </label>
+                    <label>
+                        <input type="radio" name="school" />
+                        UCLA
+                    </label>
+                    <label>
+                        <input type="radio" name="school" />
+                        OTHER
+                    </label>
+                </div>
+            </div>
+
+            <div class="allquestions">
+               <div class="question">
+                   <label>
+                       Check all of the following that apply to you:
+                   </label>
+                </div>
+               <div class="answer">
+                   <label>
+                       <input type="checkbox" />
+                       Cat lover
+                   </label>
+                   <label>
+                       <input type="checkbox" />
+                       Wear socks to bed
+                   </label>
+                   <label>
+                       <input type="checkbox" />
+                       Night Showerer
+                   </label>
+                   <label>
+                       <input type="checkbox" />
+                       Enjoyer of pizza WITHOUT pineapples
+                   </label>
+               </div>
+            </div>
+
+            <div class="allquestions">
+                <div class="question">
+                    <label for="zodiac">
+                        Please select your Chinese Zodiac animal.
+                    </label>
+                </div>
+                <div class="answer">
+                    <select id="zodiac">
+                        <option>Rat</option>
+                        <option>Ox</option>
+                        <option>Tiger</option>
+                        <option>Rabbit</option>
+                        <option>Dragon</option>
+                        <option>Snake</option>
+                        <option>Horse</option>
+                        <option>Goat</option>
+                        <option>Monkey</option>
+                        <option>Chicken</option>
+                        <option>Dog</option>
+                        <option>Pig</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="allquestions">
+                <div class="question">
+                    <label for="essay"> 
+                        In a short paragraph, explain what you think your vibes are.
+                    </label>
+                </div>
+                <div class="answer">
+                    <textarea id="essay" placeholder="I think my vibes are good because I eat bananas like corn on the cob..."> </textarea>
+                </div>
+            </div>
+
+            <div class="allquestions">
+                <div class="question">
+                    <label for="terms">
+                        Do you accept the Terms and Conditions involved with the vibe analysis?
+                    </label>
+                    
+                </div>
+                <div class="answer">
+                    <label for="terms">
+                        <input type="checkbox" id="terms" required/>
+                        Yes
+                    </label>
+                    
+
+                </div>
+            </div>
+            <div>
+                <button type="submit">Are my vibes good?</button>
+                <button type="reset">Wait let me start over</button>
+            </div>
+
+
+        </form>
+    </div>
+
+</body>
+</html>
