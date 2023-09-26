@@ -49,6 +49,18 @@
             
         }
 
+        #fourthText {
+            background: rgba(225, 100, 225, .5);
+        }
+
+        #bdayText {
+            background: rgba(100, 225, 225, .5);
+        }
+
+        #friendsText {
+            background: rgba(225, 225, 100, .5);
+        }
+
         .days {
             text-align: center;
         }
@@ -60,6 +72,10 @@
             text-align: center;
             vertical-align: middle;
             padding: 30px 0px 30px 0px;
+            
+            border-radius: 50%;
+            text-shadow: 0px 0px 10px black;
+            font-family:Courier New, Courier, monospace;
         }
 
         .event {
@@ -134,7 +150,7 @@
                 <th> 3</th>
                 <th id="fourth" class="event">
                     4
-                    <div class="eventText">
+                    <div id="fourthText" class="eventText">
                         Fourth of July
                     </div>
                 </th>
@@ -173,7 +189,7 @@
                 <th> 25</th>
                 <th id="bday" class="event"> 
                     26
-                    <div class="eventText">
+                    <div id="bdayText" class="eventText">
                         Kaley's Birthday
                     </div>
                 </th>
@@ -185,7 +201,7 @@
             <tr>
                 <th id="friends" class="event"> 
                     30
-                    <div class="eventText">
+                    <div id="friendsText" class="eventText">
                         International Friends Day
                     </div>
                 </th>
