@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Photo Gallery</title>
+
+    <style>
+
+        #header {
+            background-image: url("./img/header.jpg");
+            background-size: cover;
+            background-position: center;
+
+            height: 300px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin: 0 0 0 0;
+        }
+
+        #content {
+            width: 900px;
+            background-color: rgb(204, 255, 204);
+            padding: 50px;
+            margin: auto;
+        }
+
+        #gallery {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        h1 {
+            margin: 0 0 0 0;
+            font-size: 6em;
+        }
+
+        div {
+            margin: 0 0 0 0;
+        }
+
+        img { 
+            width: 250px;
+            height: auto;
+            margin: 20px 20px 20px 20px;
+        }
+
+        body {
+            background-color: darkolivegreen;
+        }
+
+        .photo > div {
+            visibility: hidden;
+           
+        }
+
+        .photo {
+            text-align: center;
+        }
+
+       .photo:hover > .caption{
+           visibility: visible;
+       }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>
+            Kale's Photo Gallery
+        </h1>
+    </div>
+
+    <div id="content">
+        <div id="gallery">
+            <div class="photo">
+                <img src="./img/valley.jpg" alt="Green Valley" />
+                <div class="caption">
+                    What a nice green valley.
+                </div>
+            </div>
+
+            <div class="photo">
+                <img src="./img/fern.jpg" alt="A nice green fern" />
+                <div class="caption">
+                    MMmmm a salad?
+                </div>
+            </div>
+
+            <div class="photo">
+                <img src="./img/lagoon.jpg" alt="Lagoon" />
+                <div class="caption">
+                    Oh nice now a sip of drink.
+                </div>
+            </div>
+
+            <div class="photo">
+                <img src="./img/ocean.jpg" alt="Ocean" />
+                <div class="caption">
+                    Ah thats too salty bleh bleh
+                </div>
+            </div>
+
+            <div class="photo">
+                <img src="./img/tree.jpg" alt="tree" />
+                <div class="caption">
+                    Mhhgggmmm crunchy
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
