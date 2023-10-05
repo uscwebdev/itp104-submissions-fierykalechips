@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Puzzle</title>
+
+    <style>
+
+        #header { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: darkgray;
+
+            margin: 0 0 0 0;
+            height: 200px;
+        }
+        #puzzle {
+            width: 700px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+
+            background-color: lightgray;
+
+            margin: 100px;
+        }
+
+        #content {
+            width: 1000px;
+            background-color: lightgray;
+
+            margin: auto;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        #leftDownMove {
+           
+            right: 20px;
+            top: 10px;
+        }
+
+        #rightUpMove {
+            
+            left: 15px;
+            bottom: 25px;
+        }
+
+        #upMove {
+            
+            bottom: 20px;
+        }
+
+        #leftMove {
+            right: 25px;
+        }
+
+        .movedPhoto {
+            box-shadow: 0px 0px 10px white;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+            
+        }
+
+        h1 {
+            margin: 0 0 0 0;
+            
+        }
+
+        div {
+            margin: 0 0 0 0;
+        }
+
+        body {
+            background-color:black;
+        }
+
+        .movedPhoto {
+            box-shadow: 0px 0px 10px white;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1> Roach on Da Cat Puzzle </h1>
+    </div>
+
+    <div id="content">
+        
+        <div id="puzzle">
+            <img id="rightUpMove" class="movedPhoto" src="./img/row-1-column-1.jpg" alt="puzzle piece 1,1" />
+            <img src="./img/row-1-column-2.jpg" alt="puzzle piece 1,2" />
+            <img src="./img/row-1-column-3.jpg" alt="puzzle piece 1,3" />
+
+            <img id="leftMove" class="movedPhoto" src="./img/row-2-column-1.jpg" alt="puzzle piece 2,1" />
+            <img src="./img/row-2-column-2.jpg" alt="puzzle piece 2,2" />
+            <img id="leftDownMove" class="movedPhoto" src="./img/row-2-column-3.jpg" alt="puzzle piece 2,3" />
+
+            <img src="./img/row-3-column-1.jpg" alt="puzzle piece 3,1" />
+            <img id="upMove" class="movedPhoto" src="./img/row-3-column-2.jpg" alt="puzzle piece 3,2" />
+            <img src="./img/row-3-column-3.jpg" alt="puzzle piece 3,3" />
+        </div> 
+    </div>
+</body>
+</html>
