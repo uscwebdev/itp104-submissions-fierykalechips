@@ -1,0 +1,215 @@
+#header {
+    background-image: url("./img/dante_header.jpg");
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border: 0px;
+    line-height: 600px;
+    text-shadow: 0px 0px 20px black;
+}
+
+#galleryHeader {
+    background-image: url("./img/galleryheader.jpg");
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border: 0px;
+    line-height: 600px;
+    text-shadow: 0px 0px 20px black;
+}
+
+#gallery {
+    line-height: 500px;
+}
+
+#headertext {
+    font-size: 5em;
+    color: white;
+    font-family: "Times New Roman", serif;
+    font-weight: 200;
+}
+
+#content {
+    background-color: aliceblue;
+    padding: 30px;
+    width: 800px;
+}
+
+#gcontent {
+    background-color: aliceblue;
+    padding: 30px;
+    width: 800px;
+    width: 1000px;
+}
+
+#galleryContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#miniGalleryContent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin: 0 0 0 0;
+}
+
+#photo0 {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#photo1 {
+    float: right;
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+}
+
+#photo2 {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+#sidebar {
+    width: 200px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.side_image {
+    width: 150px;
+}
+
+.sidebar_image {
+    margin: 20px;
+}
+
+h4.subtitle {
+    margin: 0px;
+}
+
+p.subtitle {
+    margin: 0px;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.subtitle {
+    visibility: hidden;
+}
+
+.sidebar_image:hover > .subtitle {
+    visibility: visible;
+}
+
+.smallSquare {
+    width: 170px;
+    height: 170px;
+}
+
+.bigSquare {
+    width: 360px;
+    height: 360px;
+}
+
+.verticalRectangle {
+    width: 170px;
+    height: 355px;
+}
+
+.horizontalRectangle {
+    width: 265px;
+    height: 170px;
+}
+
+.galleryImage {
+    background-color: grey;
+    border: 1px solid;
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: mediumslateblue;
+}
+
+#activeNavbarSelection {
+    background-color: cornflowerblue;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+    li a:hover {
+        background-color: cornflowerblue;
+    }
+
+div {
+    margin: 0;
+}
+
+body {
+    background-color: darkslategrey;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
