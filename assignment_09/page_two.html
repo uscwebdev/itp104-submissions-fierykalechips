@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A marketing and biography page for Emilion Mejia's Clothing business." />
+    <title> Emilio Mejia | Services</title>
+    <link rel="stylesheet" href="page_template.css">
+    <style>
+        h2 {
+            margin: 0 0 0 0;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        p {
+            margin: 0 0 0 0;
+        }
+
+        div {
+            padding: 0 0 0 0;
+        }
+
+        #header {
+            background-image: url("./img/header1.jpg");
+            background-position: center;
+        }
+
+        #background {
+            background-color: #DDA15E;
+        }
+
+        #content {
+            background-color: #FEFAE0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #headshot {
+            height: 200px;
+            width: auto;
+            margin-left:auto;
+            margin-right:auto;
+            
+        }
+
+        #name h2 {
+            font-size: 2em;
+        }
+
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+            margin: 15px 15px 15px 15px;
+            padding: 0 0 0 0;
+        }
+        p {
+            text-align: center;
+        }
+
+        .galleryimage {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 200px;
+           
+            position: relative;
+            padding: 0 0 0 0;
+        }
+
+            
+        .imagebox {
+            padding: 0 0 0 0;
+            margin: 15px 15px 15px 15px;
+            
+            width: 200px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: -15px;
+            bottom: 15px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding-top: 100px;
+            text-align: center;
+            visibility: hidden;
+            color: #FFF;
+        }
+
+        .galleryimage:hover > .overlay {
+            visibility: visible;
+
+        }
+
+        .overlaytext {
+            text-align: center;
+            margin: auto;
+            vertical-align: middle;
+        }
+
+      
+        
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1> Services </h1>
+    </div>
+    <div id="nav">
+        <ul id="menu">
+            <li><a href="./assignment08.html">Bio</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <div id="background">
+        <div id="content">
+            
+                <img id="headshot" src="./img/tutoring.png" alt="A man tutoring someone else." />
+            
+            
+            
+            <p>
+                Emilio offers a free first session to all students who want to try out private tutoring.
+                He tutors from elementary math up to Calculus II. Sessions can be 1 to 2 hours at a time
+                and Emilio can guide the student through their coursework and homework or help them prepare
+                for tests by creating study materials for the student.
+            </p>
+            
+            <h2> References </h2>
+            <div id="gallery">
+                <div id="img1" class="imagebox">
+                    <div class="galleryimage">
+                        <img src="./img/ref1.png" alt="A teacher giving a thumbs up." />
+                        <div class="overlay">
+                            <p class="overlaytext"> Sarah Morrison, Calculus teacher at Glendale High School </p>
+                        </div>
+
+                    </div>
+                    <p>
+                        "Emilio was my star student, and now he goes on to create more."
+                    </p>
+                </div>
+                
+                <div id="img2" class="imagebox">
+                    <div class="galleryimage">
+                        <img src="./img/ref2.png" alt="A headshot of a man." />
+                        <div class="overlay">
+                            <p class="overlaytext">Eric Benitez, Co-Owner of Mathnasium Eaglerock </p>
+                        </div>
+                    </div>
+                    
+                    <p>
+                        "He has outstanding methods for teaching that really allow a student to understand
+                        <em> why </em> they do the things they do."
+                    </p>
+                </div>
+                <div id="img3" class="imagebox">
+                    <div class="galleryimage">
+                        <img src="./img/ref3.png" alt="A happy student." />
+                        <div class="overlay">
+                            <p class="overlaytext">Jenny Li, a senior in highschool calculus</p>
+                        </div>
+                    </div>
+                    
+                    <p>
+                        "I went from hating math to finally understanding it on a deeper level. My attitude
+                        towards math and grades have changed for the better!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
