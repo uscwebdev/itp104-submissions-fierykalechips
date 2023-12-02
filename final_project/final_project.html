@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="An informational page that advertises the private tutoring service by Roy Castro." />
+    <title> Roy Private Tutoring </title>
+    <link rel="stylesheet" href="page_template.css">
+    <style>
+        h2 {
+            margin: 0 0 0 0;
+        }
+
+        p {
+            margin: 0 0 0 0;
+        }
+
+        img {
+            height: 200px;
+            width: auto;
+       
+            margin: 15px 15px 15px 15px;
+            padding: 0 0 0 0;
+        }
+
+        .image {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .photoLeft {
+            float: left;
+        }
+
+        #header {
+            background-image: url("./img/header1.jpg");
+            background-position: center;
+            text-align: left;
+            display: flex;
+            justify-content: left;
+            height: 500px;
+        }
+
+        #header h1 {
+            font-size: 5em;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            
+        }
+        #header h3 {
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            font-size: 1.5em;
+        }
+        #headerbox {
+            width: 500px;
+            margin: 0 0 0 200px;
+        }
+
+        #background {
+            background-color: #DDA15E;
+        }
+
+        #content {
+            background-color: #FEFAE0;
+        }
+
+        #par1 {
+            display: flex;
+            justify-items: baseline;
+        }
+
+        #headshot {
+            
+           padding: 40px;
+            height: 200px;
+            width: auto;
+            margin: 0 -80px 0 0;
+            z-index: 1;
+        }
+
+        div h2 {
+            font-size: 3em;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+        #aboutme {
+            padding: 50px;
+            background-color: antiquewhite;
+            
+        }
+        #aboutme p {
+            font-size: 1.3em;
+            line-height: 1.2;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+        #content h3 {
+            font-size: 1.5em;
+            margin-left:auto;
+            margin-right:auto;
+            text-align: center;
+            margin: 40px 0 0 0;
+        }
+        #howitworks {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #howitworks h2 {
+            text-align: right;
+            margin: 0 30px 0 0;
+        }
+
+            #howitworks .content {
+                width: 500px;
+                background-color: antiquewhite;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 50px;
+                margin: auto;
+                
+            }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+            .content .subcontent {
+                
+                padding: 30px;
+                display: flex;
+                justify-content: center;
+                
+                text-align: center;
+                line-height: 1.5;
+                font-size: 1.4em;
+
+            }
+
+            .subcontent img {
+                width: 60px;
+                height: auto;
+            }
+        .subcontent .vertical {
+            justify-content: center;
+            width: 180px;
+        }
+
+        #schedulebutton {
+            width: 150px;
+            height: 70px;
+            border-radius: 20px;
+           
+            background-color: mediumseagreen;
+            border: 1px solid black;
+            margin: -50px 0 0 0;
+        }
+        #schedulebutton:hover {
+            background-color: forestgreen;
+        }
+        #schedulebutton:active {
+            width:155px;
+            height:75px;
+            margin: -50px 0 -2.5px 0;
+        }
+        #howitworks form {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #endorsements {
+            background-color: burlywood;
+            padding: 40px;
+        }
+
+        #endorsements h2 {
+            margin: 0 0 20px 0;
+        }
+
+        .horizontal .vertical {
+            display: flex;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+
+        .refimg {
+            height: 100px;
+            border-radius: 50%;
+            width: auto;
+        }
+
+        div + h4 {
+            font-size: 0.8em;
+        }
+
+        p + h4 {
+            font-size: 0.8em;
+        }
+        .ref {
+            width: 250px;
+        }
+            #contactme h2 {
+                text-align: center;
+            }
+
+           #contactme {
+               
+               justify-content: center;
+           }
+            #contactme form {
+                display: flex;
+                flex-direction: column;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            input[type=text], textarea {
+                width: 600px;
+                padding: 15px;
+                margin: 0 0 20px 0;
+                border-radius: 4px;
+                border: 1px solid gray;
+                resize: none;
+            }
+
+            textarea {
+                height: 200px;
+            }
+
+            input[type=submit] {
+                background-color: cornflowerblue;
+                width: 100px;
+                padding: 15px;
+                border-radius: 5px;
+                border: 1px solid grey;
+            }
+
+            input[type=submit]:hover {
+                background-color: darkcyan;
+            }
+            .vertical img {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+      
+
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #par4 {
+            display: flex;
+            justify-content: center;
+        }
+
+        #name h2 {
+            font-size: 2em;
+        }
+
+       
+
+        .galleryimage {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 200px;
+            position: relative;
+            padding: 0 0 0 0;
+        }
+
+        .vertical {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+        }
+
+        .horizontal {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .verticaline {
+            border-left: 1px solid gray;
+            height: 200px;
+        }
+
+        .horizontal .verticaline {
+            height: 270px;
+           
+        }
+        .imagebox {
+            padding: 0 0 0 0;
+            margin: 15px 15px 15px 15px;
+            width: 200px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: -15px;
+            bottom: 15px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding-top: 100px;
+            text-align: center;
+            visibility: hidden;
+            color: #FFF;
+        }
+
+        .galleryimage:hover > .overlay {
+            visibility: visible;
+        }
+
+        .overlaytext {
+            text-align: center;
+            margin: auto;
+            vertical-align: middle;
+        }
+
+        .section {
+            margin: 40px 0 40px 0;
+        }
+      
+
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="headerbox">
+            <h1> Private Tutoring with Roy</h1>
+            <h3> Experience understanding.</h3>
+        </div>
+        
+    </div>
+    <div id="nav">
+        <ul id="menu">
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#howitworks">Services</a></li>
+            <li><a href="#contactme">Contact</a></li>
+        </ul>
+    </div>
+    <div id="background" >
+        <div id="content">
+
+            <div id="bio" class="section">
+                <h2> About Me</h2>
+                <div id="par1">
+
+                    <img class="photoLeft" id="headshot" src="./img/headshot.png" alt="A photo of Emilio Mejia" />
+                    <div id="aboutme">
+                        <p>
+                            I graduated from Glendale High School in 2020 during the pandemic and went on to
+                            Pasadena City College where I prepared to transfer to a 4-year institution. After two
+                            years at PCC I earned an associates in math and I was able to transfer to my dream
+                            school University of California Irvine, where I am currently studying Quantitative
+                            Economics. I've been tutoring and working with student since high school, first starting
+                            out by staying after school and tutoring students in need. From there, I took on more
+                            clients and amassed experience with the high school AP Calculus AB and BC curriculum.
+                        </p>
+                    </div>
+                </div>
+                <h3> Experiences </h3>
+                <div id="par4">
+
+
+                    <div id="gallery">
+                        <div class="image">
+                            <img src="./img/overhead_tutor.png" alt="A close look at the work." />
+                            <p class="caption">
+
+                            </p>
+                        </div>
+                        <div class="image">
+                            <img src="./img/tutor_kids.png" alt="Roy working with kids." />
+                            <p class="caption">
+
+                            </p>
+                        </div>
+                        <div class="image">
+                            <img src="./img/tutor_stand.png" alt="Roy teaching by working through example." />
+                            <p class="caption">
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2> How it works </h2>
+            <div id="howitworks" class="section">
+
+
+                <div class="content">
+                    <div class="subcontent">
+                        <div class="vertical">
+                            <img src="./img/calendar.png" alt="calendar icon" />
+                            Book a free first session with Roy to see how it works.
+                        </div>
+
+                    </div>
+                    <div class="verticaline"></div>
+                    <div class="subcontent">
+                        <div class="vertical">
+                            <img src="./img/notebook.png" alt="notebook icon" />
+                            Review lessons, practice problems, or study for a test.
+                        </div>
+                    </div>
+
+                    <div class="subcontent">
+                        <div class="vertical">
+                            <img src="./img/group.png" alt="multiple people icon" />
+                            Discounted group rates with students in the same class.
+                        </div>
+
+                    </div>
+                    <div class="verticaline"></div>
+                    <div class="subcontent">
+                        <div class="vertical">
+                            <img src="./img/location.png" alt="location icon" />
+                            Available in person, on zoom, or any requested location.
+                        </div>
+
+                    </div>
+                </div>
+
+                <form action="https://calendly.com/roycastro">
+                    <button id="schedulebutton" type="submit" formtarget="_blank"> Schedule Now! </button>
+                </form>
+
+
+            </div>
+            <div id="endorsements" class="section">
+                <h2> See what other people have to say! </h2>
+                <div class="horizontal">
+                    <div id="ref1" class="vertical ref">
+                        <img class="refimg" src="./img/ref1.png" alt="A teacher giving a thumbs up." />
+                        <div class="overlay">
+                            <p class="overlaytext"> Sarah Morrison, Calculus teacher at Glendale High School </p>
+                        </div>
+                        <h4> Highschool Calculus Teacher </h4>
+                        <p>
+                            "Emilio was my star student, and now he goes on to create more star students."
+                        </p>
+                        <h4> Sarah Morrison </h4>
+                    </div>
+
+                    <div class="verticaline"> </div>
+
+                    <div id="ref2" class="vertical  ref">
+                        <img class="refimg" src="./img/ref2.png" alt="A headshot of a man." />
+                        <div class="overlay">
+                            <p class="overlaytext">Eric Benitez, Co-Owner of Mathnasium Eaglerock </p>
+                        </div>
+                        <h4> Center owner and director of Mathnasium Eaglerock</h4>
+                        <p>
+                            "He has outstanding methods for teaching that really allow a student to understand
+                            <em> why </em> they do the things they do."
+                        </p>
+                        <h4> Eric Benitez </h4>
+                    </div>
+
+                    <div class="verticaline"> </div>
+
+                    <div id="ref3" class="vertical  ref">
+                        <img class="refimg" src="./img/ref3.png" alt="A happy student." />
+                        <div class="overlay">
+                            <p class="overlaytext">Jenny Li, a senior in highschool calculus</p>
+                        </div>
+                        <h4> Highschool senior in Calculus BC </h4>
+                        <p>
+                            "I went from hating math to finally understanding it on a deeper level. My attitude
+                            towards math and grades have changed for the better!"
+                        </p>
+                        <h4> Jenny Li </h4>
+                    </div>
+                </div>
+
+            </div>
+            <div class="vertical section" id="contactme">
+                <h2> Contact Me </h2>
+
+                <form action="">
+                    <label for="email"> e-mail </label>
+                    <input type="text" id="email" name="email" placeholder="johndoe@gmail.com" />
+
+                    <label for="subject"> Message </label>
+                    <textarea id="subject" name="subject" placeholder="Write your message here..."></textarea>
+
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
