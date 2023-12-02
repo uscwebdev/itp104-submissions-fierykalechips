@@ -309,10 +309,10 @@
 
         .overlay {
             position: absolute;
-            top: 15px;
-            left: 15px;
-            right: -15px;
-            bottom: 15px;
+            top: 35px;
+            left: 35px;
+            right: 35px;
+            bottom: 35px;
             background-color: rgba(0, 0, 0, 0.6);
             padding-top: 100px;
             text-align: center;
@@ -320,7 +320,11 @@
             color: #FFF;
         }
 
-        .galleryimage:hover > .overlay {
+        .image {
+            position: relative;
+        }
+
+        .image:hover > .overlay {
             visibility: visible;
         }
 
@@ -333,8 +337,45 @@
         .section {
             margin: 40px 0 40px 0;
         }
-      
 
+        @media (max-width: 991px) {
+            #gallery {
+                width: 300px;
+            }
+            #aboutme {
+                width: 450px;
+            }
+
+        }
+        @media (max-width: 767px) {
+            #bio h2 {
+                padding: 0 0 0 80px;
+            }
+            #gallery {
+                width: 150px;
+            }
+            #aboutme {
+                width: 250px;
+                
+            }
+
+            input[type=text], textarea {
+                width: 300px;
+               
+            }
+
+            #endorsements h2 {
+                width: 300px;
+                padding: 0 0 0 70px;
+            }
+
+            .howitworks {
+                width: 300px;
+                padding: 0 0 0 90px;
+            }
+        }
+        
+       
     </style>
 </head>
 
@@ -375,32 +416,31 @@
                 </div>
                 <h3> Experiences </h3>
                 <div id="par4">
-
-
                     <div id="gallery">
                         <div class="image">
-                            <img src="./img/overhead_tutor.png" alt="A close look at the work." />
-                            <p class="caption">
-
-                            </p>
+                            <img class="galleryimage" src="./img/overhead_tutor.png" alt="A close look at the work." />
+                            <div class="overlay">
+                                <p class="overlaytext"> Studied math meticulously since HS.</p>
+                            </div>
+                            
                         </div>
                         <div class="image">
-                            <img src="./img/tutor_kids.png" alt="Roy working with kids." />
-                            <p class="caption">
-
-                            </p>
+                            <img class="galleryimage" src="./img/tutor_kids.png" alt="Roy working with kids." />
+                            <div class="overlay">
+                                <p class="overlaytext">Worked as a Education director for 5+ years.</p>
+                            </div>
                         </div>
                         <div class="image">
-                            <img src="./img/tutor_stand.png" alt="Roy teaching by working through example." />
-                            <p class="caption">
-
-                            </p>
+                            <img class="galleryimage" src="./img/tutor_stand.png" alt="Roy teaching by working through example." />
+                            <div class="overlay">
+                                <p class="overlaytext"> Private tutoring for 5+ years.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <h2> How it works </h2>
+            <h2 class="howitworks"> How it works </h2>
             <div id="howitworks" class="section">
 
 
